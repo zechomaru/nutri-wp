@@ -1,0 +1,57 @@
+doctype html
+html(lang='es')
+  head
+    link(href='https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script', rel='stylesheet', type='text/css')
+    script(src='https://use.fontawesome.com/90be6d7899.js')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css')
+    link(rel='stylesheet', type='text/css', href='css/estilos.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+    meta(charset='utf-8')
+    title Nutri
+    //-google map api
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCy1ReDfk9EoR1NAc1GG1bDfq8Tke_gFy4&callback=initMap')
+    //-google map
+    script(type='text/javascript', src='js/google-map-script.js')    
+  body.loaded.Fondo
+    // Start Page Loading
+    #loader-wrapper
+      #loader
+      .loader-section.section-left
+      .loader-section.section-right
+    // End Page Loading
+    .Login-mas
+      #login-page.row.Login-page
+        .Login-content
+          .col.s12.z-depth-4.card-panel
+            form.login-form
+              .row
+                .input-field.col.s12.center
+                  img.responsive-img.valign.profile-image-login(src='http://nutri.com.ec/wp-content/uploads/2014/09/logo.png', alt='')
+                  p.center.login-form-text Administracion de NUTRI
+              .row.margin
+                .input-field.col.s12
+                  i.fa.fa-user.prefix.blue-text
+                  input#username(type='text')
+                  label(for='username') Usuario
+              .row.margin
+                .input-field.col.s12
+                  i.fa.fa-lock.prefix.blue-text
+                  input#password(type='password')
+                  label(for='password') Contrasena
+              .row
+                .input-field.col.s12.m12.l12.login-text
+                  input#remember-me(type='checkbox')
+                  label(for='remember-me') Recuerdame
+              .row
+                .input-field.col.s12
+                  a.btn.blue.waves-effect.waves-light.col.s12(href='#!') Login
+              .row
+                .input-field.col.s6.m6.l6
+                  p.margin.medium-small
+                    a(href='#!') Registrate
+                .input-field.col.s6.m6.l6
+                  p.margin.right-align.medium-small
+                    a(href='#!') Recuperar
+    script(src='https://code.jquery.com/jquery-2.2.3.min.js', integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+    script(type='application/javascript', src='js/app.js')  

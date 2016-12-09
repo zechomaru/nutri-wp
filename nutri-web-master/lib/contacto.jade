@@ -1,0 +1,59 @@
+.row.white.Trabaja.z-depth-4
+  .col.s12
+    .card-image.waves-effect.waves-block.waves-light
+      #map
+  .col.s12.m6
+    .row
+      form.col.s12
+        .row
+          .input-field.col.s6
+            input#first_name.validate(type='text')
+            label(for='first_name') Nombre
+          .input-field.col.s6
+            input#last_name.validate(type='text')
+            label(for='last_name') Apellido
+        .row
+          div
+            .input-field.inline.col.s12
+              input#email.validate(type='email')
+              label(for='email', data-error='Error', data-success='Email Correcto') Email
+        .row
+          .input-field.col.s12
+            textarea#textarea1.materialize-textarea
+            label(for='textarea1') Mensaje
+        .row
+          .col.s12
+            button.btn.blue.waves-red(type="submit", value="Enviar") Enviar
+              i.fa.fa-send.right
+  .col.s12.m6.Img-Content
+    ul.collapsible.collapsible-accordion(data-collapsible='accordion')
+      li
+        .collapsible-header
+          i.fa.fa-question.blue-text 
+          |  FAQ
+        .collapsible-body(style='')
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      li.active
+        .collapsible-header.active
+          i.fa.fa-envelope.blue-text 
+          |  Necesitas ayuda
+        .collapsible-body(style='display: none;')
+          p
+            | Bienvenido
+            a(mailto='email@tuweb.com') email@tuweb.com
+            | Lo hacemos muy bien
+          p
+            | los trabajas mas creativos
+            a(href='http://aquivamos.org/', target='_blank') Ve nuestro trabajo
+      li
+        .collapsible-header
+          i.fa.fa-smile-o.blue-text
+          |  Testimonios
+        .collapsible-body(style='')
+          blockquote
+            | Fantastic product, my sites all run super fast and the support is excellent!
+            br
+            | The website you designed helped a lot!

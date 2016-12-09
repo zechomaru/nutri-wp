@@ -1,0 +1,88 @@
+doctype html
+html(lang='es')
+  head
+    link(href='https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script', rel='stylesheet', type='text/css')
+    script(src='https://use.fontawesome.com/90be6d7899.js')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css')
+    link(rel='stylesheet', type='text/css', href='css/estilos.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+    meta(charset='utf-8')
+    title Nutri
+    //-google map api
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCy1ReDfk9EoR1NAc1GG1bDfq8Tke_gFy4&callback=initMap')
+    //-google map
+    script(type='text/javascript', src='js/google-map-script.js')    
+  body.green.lighten-5
+    //-Apartir de aqui escribir el codigo
+    header.row.white.z-depth-1
+      .col.s2.l1(style="height:100% !important;")
+        h4.hide-on-small-only.hide-on-med-only.center-align
+          a(href='#!')
+            img(class='responsive-img', src='http://nutri.com.ec/wp-content/uploads/2014/09/logo.png')
+        a.col.s12.center-align.button-collapse.hide-on-large-only(style='padding-top:10px;font-size:25px;', href='#', data-activates='mobile-demo')
+          i.blue-text.fa.fa-bars     
+      .col.s10.l11
+        .col.s12
+          nav(style='background:none;box-shadow:none;border-bottom: 1px solid #e0e0e0;')
+            .nav-wrapper
+              a.brand-logo.center.hide-on-large-only(href='#')
+               img(style='display:block; width:100px; margin-top:5px;', class='responsive-img', src='http://nutri.com.ec/wp-content/uploads/2014/09/logo.png')
+              ul#nav-mobile.left.hide-on-med-and-down
+                li
+                  a.blue-text(href='#!') Inicio
+                li
+                  a.blue-text(href='#!') Productos
+                li
+                  a.blue-text(href='#!') Distribuidores
+                li
+                  a.blue-text(href='#!') Trabaja con nosotros                  
+                li
+                  a.blue-text(href='collapsible.html') Contacto                                    
+        .col.s12.hide-on-small-only.hide-on-med-only
+          nav(style='background:none;box-shadow:none;')
+            .nav-wrapper
+              ul#nav-mobile.left.hide-on-med-and-down
+                li
+                  a.blue-text(href='#!') Lacteos San Antonio
+                li
+                  a.blue-text(href='#!') ¿Quienes Somos?                  
+    section
+      .container
+        .row
+          h2.center-align.Titulo-principal.grey-text.text-darken-1 Contacto
+        //-include ./productos.jade
+        //-include ./distribuidores.jade
+        //-include ./trabaja.jade
+        //-include ./contacto.jade
+        include ./parallax.jade
+    footer.page-footer.grey.darken-2
+      .container
+        .row
+          .col.l4.s12
+            h5.white-text Contacto
+            p.grey-text.text-lighten-4 email@email.com
+          .col.l4.s12
+            h5.white-text Telefono
+            p.grey-text.text-lighten-4 +44-555-55-55
+          .col.l4.s12
+            h5.white-text Dirección
+            p.grey-text.text-lighten-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, est!
+      .footer-copyright.grey.darken-3
+        .container
+          .row
+            .col.s12.m8.l11
+              | © 2016 Todos los derechos reservados
+            .col.s12.m4.l1
+              .row
+                .col.s4
+                  a(href='')
+                    i.grey-text.fa.fa-facebook(aria-hidden='true')
+                .col.s4
+                  a(href='')
+                    i.grey-text.fa.fa-twitter(aria-hidden='true')
+                .col.s4
+                  a(href='')
+                    i.grey-text.fa.fa-instagram(aria-hidden='true')
+    script(src='https://code.jquery.com/jquery-2.2.3.min.js', integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+    script(type='application/javascript', src='js/app.js')
